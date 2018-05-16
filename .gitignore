@@ -1,6 +1,12 @@
 angular-1.6.9
 angular-1.6.9.zip
 AngularJS-UI-Development.pdf
+.tmp
+.DS_Store
+.DS_Store?
+node_modules/
+.dpl/
+
 
 # Compiled class file
 *.class
