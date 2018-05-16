@@ -6,7 +6,7 @@ blogames.controller('UsuarioController', function($scope){
         idade: ''
     };
 
-    function submeter(){
+    $scope.submeter = function(){
         console.log('bora');
     }
 });
