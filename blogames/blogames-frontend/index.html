@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Login</title>
+    </head>
+    <body ng-app="blogames">
+
+        <form ng-controller="UsuarioController" ng-click="submeter()">
+            <div>
+                <input type="text" ng-model="usuario.nome"/>
+                <h1>Olá {{usuario.nome}}</h1>
+
+                <input type="number" ng-model="usuario.idade"/>
+                <h1>{{usuario.idade}} anos</h1>
+            </div>
+            <button type="submit">Ok</button>
+        </form>
+
+        <script src="vendor/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
