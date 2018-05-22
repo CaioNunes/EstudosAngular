@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br" ng-app="blogames">
+
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
         <title>Blogames</title>
         <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
         <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
         <script src="vendor/angular.min.js"></script>
+        <script src="vendor/angular-route.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="routes.js"></script>
         <script src="js/user-controller.js"></script>
-
     </head>
-    <body ng-controller="UserController">
-             <div class="container">
-                <div class="jumbotron">
-                    <h1 class="text-center">Alurapic</h1>
-                </div>
-                
-                <form ng-submit="save()">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3>Login</h3>
-                        </div>
-                        <div class="panel-body">
-                            <input type="text" ng-model="user.login">
-                            <input type="text" ng-model="user.password">
-                        </div>
-                    </div> <!-- fim panel -->
-                    <button type="submit">OK</button>
-                </form>
 
-        </div> <!-- fim container -->        
+    <body>
+        <div ng-view></div>
     </body>
+
 </html>
