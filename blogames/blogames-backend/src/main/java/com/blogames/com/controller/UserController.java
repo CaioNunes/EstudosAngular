@@ -7,7 +7,7 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 @RestController @CrossOrigin("*")
-@RequestMapping(consumes = "application/json", produces = "application/json")
+@RequestMapping()
 public class UserController {
 
     @Autowired
@@ -16,7 +16,6 @@ public class UserController {
     @PostMapping(value = "/user/save")
     public String save(@RequestBody User user){
         userRepository.save(user);
-        //Consulta
         return "";
     }
 }
